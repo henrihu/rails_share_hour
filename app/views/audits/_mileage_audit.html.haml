@@ -1,0 +1,16 @@
+.entry
+  %div.title-container
+    %p.entry-title Hours Entry
+  %div
+    %span= t("audits.date")
+    %span= @history.auditable.date
+  %div
+    %span= t("audits.user")
+    %span= @history.auditable.user.name
+  %div
+    %span= t("audits.project")
+    %span= @history.auditable.project.name
+  %div
+    %span= t("audits.mileages")
+    %span= @history.auditable.value
+= render partial: "audits"

@@ -1,0 +1,18 @@
+%footer.footer
+  .footer-links
+    %ul
+      %li
+        %a{href: "#{root_path}#pricing"} Pricing
+      %li= link_to "The Team", page_path("team")
+  %hr/
+  %p
+
+    Brought to you by
+    %a{href: "http://www.defacto.nl", target: "_blank"} Defacto
+    and our
+    = succeed "." do
+      %a{href: "https://github.com/DefactoSoftware/Hours/graphs/contributors", target: "_blank"} contributors
+    %br/
+    Greetings from drizzling
+    %a{href: "https://www.flickr.com/search/?q=groningen", target: "_blank"} Groningen
+    \- The Hours team.

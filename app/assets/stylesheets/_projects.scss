@@ -1,0 +1,177 @@
+.tags-list {
+  padding:0;
+  list-style:none;
+  float: right;
+
+  display: none;
+  @include media($medium-screen) {
+    display: block;
+  }
+
+  li, a {
+    display: none;
+    float:left;
+    height:24px;
+    line-height:24px;
+    position:relative;
+    font-size:11px;
+  }
+
+  a {
+    margin-top: $base-line-height / 2;
+    margin-left:20px;
+    padding:0 10px 0 12px;
+    background:$blue;
+    color:#fff;
+    text-decoration:none;
+    border-bottom-right-radius:4px;
+    border-top-right-radius:4px;
+
+    &.show {
+      display: block;
+      li {
+        display: block;
+      }
+    }
+
+    &:before {
+      content:"";
+      float:left;
+      position:absolute;
+      top:0;
+      left:-12px;
+      width:0;
+      height:0;
+      border-color:transparent $blue transparent transparent;
+      border-style:solid;
+      border-width:12px 12px 12px 0;
+    }
+
+    &:after {
+      content:"";
+      position:absolute;
+      top:10px;
+      left:0;
+      float:left;
+      width:4px;
+      height:4px;
+      border-radius:2px;
+      background:#fff;
+      box-shadow:-1px -1px 2px #004977;
+    }
+
+    &:hover { background:#555; }
+    &:hover:before { border-color:transparent #555 transparent transparent; }
+  }
+}
+
+.pagination {
+  text-align: center;
+  margin-top:18px;
+}
+
+.projects {
+  .wrapper {
+    @include row(table);
+  }
+
+  .project-title {
+    display: inline-block;
+  }
+
+  .project-budget {
+  }
+
+  .projects-overview {
+    @include span-columns(12);
+    padding: 0;
+    vertical-align: top;
+
+    @include media($laptop-screen) {
+      @include span-columns(10);
+    }
+
+    @include media($large-screen) {
+      @include span-columns(12);
+    }
+
+    .entry_tag_list .selectize-input {
+      // Fix the tags input position
+      overflow: visible;
+    }
+
+    #new-project-button {
+    }
+
+    .activities {
+      .category {
+        display: inline-block;
+      }
+
+      .spent {
+        display: inline-block;
+        width: auto;
+        height: auto;
+        margin: auto;
+        line-height: 1;
+        text-align: left;
+
+        .spent-info {
+          top: 0;
+        }
+      }
+
+      .hours {
+        display: none;
+      }
+
+      .percent {
+        margin-top: 0px;
+      }
+      .spent-chart {
+        display: none;
+      }
+    }
+
+    .project-list {
+      padding: 0;
+      list-style: none;
+      clear:both;
+
+      .project {
+        padding: 20px;
+        margin: 30px 0 0;
+
+        &.container {
+          width: auto;
+          min-height: 0;
+          background: #fff;
+        }
+      }
+    }
+
+    .new-project {
+      text-align: center;
+      margin: 30px;
+    }
+  }
+}
+
+header {
+  .actions {
+    float: right;
+  }
+}
+
+.activity-description {
+  text-align: right;
+}
+
+.info {
+  background-color: $light-yellow;
+  text-align: center;
+  line-height: 3em;
+  margin: 10px 0px;
+  border-radius: 8px;
+}
+

@@ -1,0 +1,4 @@
+.outer
+  .container
+    %h1= t("audits.title")
+    = render partial: "#{@history.auditable.class.to_s.downcase}_audit"

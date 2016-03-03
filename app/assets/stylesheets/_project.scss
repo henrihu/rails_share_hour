@@ -1,0 +1,60 @@
+.project {
+  header {
+    .actions {
+      float: right;
+      line-height: 40px;
+    }
+  }
+}
+
+#new_project, .edit_project {
+
+  input[type=number] {
+    width: 500px;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .input {
+    margin: 10px 0;
+
+    input {
+      resize: none;
+      font-smoothing: antialiased;
+    }
+  }
+
+  .selectize-dropdown, .selectize-input, .selectize-input input {
+    font-size: $base-font-size;
+    font-family: 'Open Sans';
+  }
+
+  .select {
+    width: 500px;
+  }
+}
+
+.clients-header {
+  display: block;
+
+  img {
+    vertical-align: bottom;
+  }
+
+  span {
+    font-size: 1em;
+    margin-right: 7px;
+  }
+}
+
+.archive-link {
+  float: right;
+  line-height: 45px;  
+}
+
+.audit-link {
+  float: right;
+  line-height: 40px;
+}

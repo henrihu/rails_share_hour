@@ -1,0 +1,35 @@
+.taggable {
+  position: relative;
+
+  input {
+    background-color: transparent;
+    z-index: 10;
+  }
+}
+
+.background-highlighter {
+  color: transparent;
+  font-size: 1em;
+  left: 0;
+  margin-bottom: 0.75em;
+  padding: 0.5em;
+  pointer-events: none;
+  position: absolute;
+  top: -1px;
+  z-index: 1;
+}
+
+.hashtag {
+  background-color: lighten($blue, 35%);
+  border-radius: 2px;
+  color: black;
+  display: inline-block;
+  z-index: 5;
+}
+
+.atwho-view li {
+  &:hover,
+  &.cur {
+    background-color: $blue;
+  }
+}

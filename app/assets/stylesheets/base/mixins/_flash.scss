@@ -1,0 +1,18 @@
+@mixin flash($color) {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 9999;
+  background: rgba($color, .9);
+  color: darken($color, 60);
+  padding: $base-line-height / 2;
+  text-align: center;
+
+  a {
+    color: darken($color, 70);
+
+    &:hover {
+      color: darken($color, 90);
+    }
+  }
+}

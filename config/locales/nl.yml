@@ -1,0 +1,369 @@
+---
+nl:
+  weekdays:
+    monday: Maandag
+    tuesday: Dinsdag
+    wednesday: Woensdag
+    thursday: Donderdag
+    friday: Vrijdag
+    saturday: Zaterdag
+    sunday: Zondag
+  audits:
+    nothing: niets
+    title: Audit Log
+    date: "Datum:"
+    action: "Handeling:"
+    user: "Gebruiker:"
+    project: "Project:"
+    name: "Naam:"
+    client: "Klant:"
+    description: "Beschrijving:"
+    billable: "Facturabel:"
+    archived: "Gearchiveerd:"
+    budget: "Budget:"
+    category: "Categorie:"
+    hours: "Hours:"
+    mileages: "Kilometers"
+    from: van
+    to: naar
+    actions:
+      update: gewijzigd
+      create: gemaakt
+      delete: verwijderd
+  account:
+    back_to_website: Terug naar website
+    confirm_destroy: Weet je zeker dat je je account wil verwijderen?
+    danger_zone: Danger Zone
+    delete: Verwijder mijn account
+    deleted: Je account is verwijderd.
+    email: Email
+    first_name: Voornaam
+    invalid_characters: bevat invalide karakters
+    last_name: Achternaam
+    password: Wachtwoord
+    repeat_password: Bevesting wachtwoord
+    subdomain: subdomein
+    warning: Het verwijderen van je account zal jouw en iedereens gegevens op %{subdomain}
+      verwijderen en kan niet ongedaan worden gemaakt.
+    users_instructions_html: |
+      Collega's kunnen zich %{sign_up_path} registreren met
+      een email dat eindigt op <em> %{domain} </em>
+  account_created_successfully: Aanmelden is gelukt
+  archives:
+    index:
+      date: Datum
+      project: Project
+      hours: Uren
+      un_archive_link: Dearchiveren
+  activerecord:
+    attributes:
+      hour:
+        value: "Uren"
+      mileage:
+        value: "Kilometers"
+    errors:
+      messages:
+        blank: "invoer mag niet leeg zijn"
+        not_a_number: "invoer is geen nummer"
+      models:
+        user:
+          attributes:
+            email:
+              invalid_email: "%{attribute} is geen mail van de organisatie"
+        account:
+          attributes:
+            subdomain:
+              invalid_characters: bevat ongeldige tekens
+              restricted: mits subdomein wordt beperkt
+
+    models:
+      user: Gebruiker
+  back: Terug
+  billables:
+    billable_entries: Facturabele entries
+    select_marked: Selecteer entries om te factureren
+    buttons:
+      bill_selected: Factureer geselecteerde entries
+      filter: Filter entries
+    filters:
+      billed: Gefactureerd
+      billed_label: Gefactureerd/Niet Gefactureerd
+      billed_empty: Alle facturabele entries
+      clients: Clients
+      from_date_label: Van datum
+      not_billed: Niet Gefactureerd
+      to_date_label: Tot datum
+      projects: Projecten
+    table:
+      hours: Uren
+      date: Datum
+      user: Gebruiker
+      category: Categorie
+      billed: Gefactureerd
+  boolean:
+    "true": "ja"
+    "false": "nee"
+  budget_html: "<strong>%{budget_left}</strong> van <strong>%{budget}</strong> uren van het budget over"
+  category:
+    edit: edit
+    remaining: Other
+  category_created: De categorie is aangemaakt
+  category_updated: De categorie is gewijzigd
+  change_password: Verander wachtwoord
+  charts:
+    hours_per_day: Uren per dag
+    hours_spent_per_category: Uren besteed per categorie
+    hours_spent_per_project: Uren besteed per project
+    hours_spent_per_user: Uren besteed per gebruiker
+  client:
+    edit: Bewerk
+  client_created: Client succesvol aangemaakt
+  client_updated: Client succesvol bijgewerkt
+  confirm: Weet u het zeker?
+  date:
+    formats:
+      default: "%d/%m/%Y"
+      with_weekday: "%a %m/%d/%y"
+    today: vandaag
+    distance_in_words:
+      about_x_hours:
+        one: ongeveer een uur
+        other: ongeveer %{count} uur
+      about_x_months:
+        one: ongeveer een maand
+        other: ongeveer %{count} maanden
+      about_x_years:
+        one: ongeveer een jaar
+        other: ongeveer %{count} jaar
+      almost_x_years:
+        one: bijna een jaar
+        other: bijna %{count} jaar
+      half_a_minute: een halve minuut
+      less_than_x_minutes:
+        one: minder dan een minuut
+        other: minder dan %{count} minuten
+      less_than_x_seconds:
+        one: minder dan een seconde
+        other: minder dan %{count} seconden
+      over_x_years:
+        one: meer dan een jaar
+        other: meer dan %{count} jaar
+      x_days:
+        one: 1 dag
+        other: "%{count} dagen"
+      x_minutes:
+        one: 1 minuut
+        other: "%{count} minuten"
+      x_months:
+        one: 1 maand
+        other: "%{count} maanden"
+      x_seconds:
+        one: 1 seconde
+        other: "%{count} seconden"
+  email:
+    confirmation:
+      confirm_password: Bevestig mijn account
+      salutation: Welkom %{email}!
+    reset_password:
+      info_text: Uw wachtwoord wordt niet veranderdt tot u de link hierboven heb gebruikt
+        om een nieuwe aan te maken.
+      requested_link: |
+        Iemand heeft een aanvraag gedaan om uw wachtwoord te wijzigen.
+        U kut dit doen met de link hieronder:
+      salutation: Hallo %{email} !
+      wrong_mail: Als deze aanvraag niet van u kwam, kunt u deze mail negeren.
+  entries:
+    download_csv: Download alle inboekingen als CSV
+    index:
+      category: Categorie
+      date: Datum
+      delete: verwijderen
+      description: 'Beschrijving of #hashtags'
+      edit: aanpassen
+      edit_entry: Entry bewerken
+      hours: Uren
+      mileages: Kilometers
+      new: Nieuwe entry
+      project: Project
+      user_entries: "%{user}s boekingen"
+      changes: wijzigingen
+  entry_activity_html:
+    one: "%{user} heeft één uur gespendeerd aan %{category} op %{project}"
+    other: "%{user} heeft %{count} uren gespendeerd aan %{category} op %{project}"
+  entry_created:
+    hours: Uren zijn aangemaakt
+    mileages: Kilometers zijn aangemaakt
+  entry_deleted:
+    hours: De uren zijn verwijderd
+    mileages: De kilometers zijn verwijderd
+  entry_failed: Iets ging mis bij het opslaan van uw uren
+  entry_saved: Uren zijn opgeslagen
+  helpful:
+    heading: Hulp nodig?
+    placeholder: Schrijf hier uw vraag...
+    tagline: Heeft u een vraag over Hours? Hulp nodig om te kunnen beginnen?
+  helpers:
+    submit:
+      create: Opslaan
+      update: Opslaan
+      project:
+        create: Opslaan
+        update: Opslaan
+      category:
+        create: Opslaan
+        update: Opslaan
+      client:
+        create: Opslaan
+        update: Opslaan
+  info:
+    here: hier
+    no_categories_html: Zo te zien heb je nog geen categorieen aangemaakt. Dat kun
+      je %{categories_path} doen.
+    no_projects_html: Zo te zien heb je nog geen projecten aangemaakt. Dat kun je
+      %{new_project_path} doen.
+    no_billable_projects_html: Zo te zien heb je nog geen factureerbare projecten. Dat kun je %{new_project_path} doen.
+    no_billable_entries_html: Zo te zien heb je geen entries die voldoen aan je zoekcriteria.
+  loader:
+    saving: Opslaan
+    signing_in: Inloggen
+  navbar:
+    dropdown:
+      edit_user: Gegevens aanpassen
+    entries: Mijn Uren
+  no_hours_registered: Niemand heeft nog tijd aan %{project} besteed
+  project:
+    errors:
+      client_missing: Als het project facturabel is moet er een klant geselecteerd worden
+    form:
+      client: Klant
+      no_client: Geen klant
+    show:
+      changes_link: wijzigingen
+      edit_link: aanpassen
+      per_user: Per gebruiker
+    table_head:
+      hours: Uren
+      tag: Tag
+    edit:
+      archive_link: Archiveren
+      un_archive_link: Dearchiveren
+  project_activity_html:
+    one: "<strong>%{full_name}</strong> heeft <strong>%{hours}</strong> uren aan <strong>%{project}</strong> besteed"
+    other: "<strong>%{count}</strong> mensen hebben <strong>%{hours}</strong> uren aan <strong>%{project}</strong> besteed"
+  project_created: Het project is aangemaakt
+  project_updated: Het project is gewijzigd
+  read_more: lees verder
+  registration:
+    edit: Pas uw gegevens aan
+    gravatar_instructions_html: Update je profiel foto op <a href="https://www.gravatar.com"
+      target="_blank">Gravatar</a>
+    hint:
+      blank: laat het veld leeg als u het niet wilt aanpassen
+      current_password: we hebben uw huidig wachtwoord nodig om de veranderingen te bevestigen
+    update_button: Opslaan
+  report:
+    headers:
+      date: Datum
+      user: Gebruiker
+      project: Project
+      category: Categorie
+      client: Klant
+      hours: Uren
+      mileages: Kilometers
+      billable: Facturabel
+      billed: Gefactureerd
+      description: Beschrijving
+    filters: filters
+    hours_per_day: Uren per dag
+    monthly: 1 maand
+    weekly: 1 week
+    yearly: 1 jaar
+  sign_in: Login
+  sign_out: Uitloggen
+  simple_form:
+    labels:
+      entry:
+        category: Categorie
+        date: Datum
+        hours: Uren
+      user:
+        current_password: Huidig wachtwoord
+        first_name: Voornaam
+        last_name: Achternaam
+        password: Wachtwoord
+        password_confirmation: Wachtwoord bevestiging
+      project:
+        billable: Facturabel
+        name: Naam
+      client:
+        name: Naam
+        description: Beschrijving
+        logo: Logo
+  tags:
+    show:
+      hours_indication: u
+      hours_indication_title:
+        one: uur
+        other: uren
+    show_more: Toon meer...
+  time:
+    formats:
+      long: " %d-%m-%Y %H:%M"
+  titles:
+    accounts:
+      edit: Account Aanpassen
+    activities: Activiteiten
+    archives:
+      index: Gearchiveerde projecten
+    application: Uren
+    billables:
+      index: Facturabele uren
+    categories:
+      edit: Bewerk Categorie
+      index: Categoriëen
+      new: Nieuwe Categorie
+    clients:
+      index: Klanten
+      new: Nieuwe Klant
+    entries:
+      index: "%{name} zijn Uren"
+    projects:
+      edit: Bewerk Project
+      index: Projecten
+      new: Nieuw project
+    users:
+      index: Gebruikers
+    reports:
+      index: Rapport
+  user_updated: Je account is bijgewerkt
+  users:
+    confirm: Bevestig
+    email: Email
+    invitation_sent_at: "%{time_ago} geleden uitgenodigd"
+    invite: Nodig uit
+    update:
+      update_needs_confirmation: U heeft uw account aangepast, maar we moeten uw email valideren. Controlleer uw email en klik op de bevestigingslink om uw nieuw email te valideren.
+      updated: Uw account is aangepast.
+  views:
+    pagination:
+      truncate: ...
+
+  entry_filters:
+    title: Filters
+    clients: Alle  klanten
+    projects: Alle projecten
+    users: Alle gebruikers
+    from_date_label: Vanaf
+    to_date_label: Tot
+    billed_label: Gefactureerd en niet gefactureerd
+    billed: Gefactureerd
+    billable: Facturabel
+    not_billed: Niet gefactureerd
+    not_billable: Niet factureerbaar
+    billed_empty: Gefactureerd of niet
+    billable_empty: Facturabel of niet
+    archived_empty: Gearchiveerde en actieve projecten
+    archived: Gearchiveerde projecten
+    not_archived: Actieve projecten
+  pages:
+    prices: Prijzen  
